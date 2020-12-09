@@ -1,0 +1,239 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color:white;
+    font-family: 'Playfair Display', serif ;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header{
+    background-color: rgb(51, 49, 49);
+    background-image: url("imagini/6.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 30px;
+    height: 570px;
+    text-align: center;
+    box-shadow: 5px 10px 18px #888888;
+    
+
+}
+header a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-size:20px;
+    margin-top: 30px;
+}
+/*Responsive design*/
+header .mobile{
+    display: none; 
+
+}
+header .desktop{
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    header{
+        height: 200px;
+        background-position: 0 -30px;
+        font-size: small;
+    }
+    header .mobile{
+        display: inline-block;
+    }
+    
+    header .desktop{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    header{
+    height: 200px;
+    background-position: 0 -0px;
+    font-size: small;
+    
+    }
+   
+}
+/*Features*/
+.features{
+    background-color: white;
+    color:rgb(163, 163, 163); 
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+
+}
+.features figure{
+    margin:auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    }
+
+.features figure img{
+    
+    height: 300px; width: 300px;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+}
+
+div{
+    background-color: transparent;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+header .logo a{
+    background-image: url("imagini/logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -9999999999px;
+    position: relative;
+    width: 300px;
+    display: inline-block;
+    height: 200px;
+    top:-80px;
+    
+}
+
+.lower{
+    background-image: url("imagini/hero.jpg");
+    padding-left: 30px;
+    padding-top: 100px;
+    text-align: left;
+    height: 300px;
+    background-color:rgb(255, 255, 255) ;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*BUTON in lower*/
+
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #c2bba7 100%);
+	background-color:#d6d1c1;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-size:14px;
+	font-weight:bold;
+	padding:13px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.ultima{
+    background-image: url("imagini/noi.jpg");
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding-right: 30px;
+    padding-top:1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 400px;
+    
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*Footer */
+footer{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    height: 80px;
+    color: gray;
+    font-size: 12px;
+    padding: 20px 20px;
+
+}
+
+/*DROPDOWN*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width:0px;
+    color: black;
+    text-transform: uppercase;
+    padding: 1px 1px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .modal {
+    display: none; /* ascunsa initial*/
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;  
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.952);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height: 100px;
+    color:black;
+    width: 80%;
+  }
+  
+  /* butonul de inchidere */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

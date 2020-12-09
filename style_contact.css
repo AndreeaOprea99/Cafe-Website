@@ -1,0 +1,227 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color:white;
+    font-family: 'Playfair Display', serif ;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header{
+    background-color: rgb(51, 49, 49);
+    background-image: url("imagini/6.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 30px;
+    height: 570px;
+    text-align: center;
+    
+    
+
+}
+header a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-size:20px;
+    margin-top: 30px;
+}
+/*Responsive design*/
+header .mobile{
+    display: none;
+
+}header .desktop{
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    header{
+        height: 200px;
+        background-position: 0 -30px;font-size: small;
+    }
+    header .mobile{
+        display: inline-block;
+    }
+    
+    header .desktop{
+        display: none;
+    }
+    .features{height: 500px;
+        background-position: 0 -0px;
+        font-size: small;
+    }
+}
+@media screen and (max-width: 500px) {
+    header{
+    height: 200px;
+    background-position: 0 -0px;
+    font-size: small;
+    
+    }
+    .features{height: 500px;
+        background-position: 0 -0px;
+        font-size: small;
+    }
+   
+}
+/*Features*/
+.features{
+    background: linear-gradient(180deg, #D3D3D3, rgb(255, 255, 255));
+    color:rgb(255, 255, 255); 
+    height: 500px;
+    
+}
+.features table{
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    padding:50px;
+    font-size: x-large;color:rgb(0, 0, 0);
+}
+.features table td{padding: 40px};
+
+.lower{
+    color: black;
+    height: 500px;
+}
+.lower form{
+    padding: 50px;
+}
+div{
+    background-color: transparent;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+header .logo a{
+    background-image: url("imagini/logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 300px;
+    display: inline-block;
+    height: 200px;
+    top:-80px;
+    
+    text-indent: -9999999999px;
+}
+
+
+
+
+
+/*Footer */
+footer{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    height: 80px;
+    color: gray;
+    font-size: 12px;
+    padding: 20px 20px;
+
+}
+
+/*DROPDOWN*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width:0px;
+    color: black;
+    text-transform: uppercase;
+    padding: 1px 1px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*linkuri pentru social media*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    vertical-align: middle;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }  
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #242424;/*schimba culoarea atunci cand cursorul este pe acesta*/
+  }
+  
+  .interval{
+    background:white;
+    color:rgb(255, 255, 255); 
+    height: 500px;
+    width: 100%;
+    
+  }

@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Pagina pornire</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body onload="startTime()">
+        <header>
+            <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><div class="dropdown"><span><a href="#">Meniu</a></span>
+                        <div class="dropdown-content">
+                        <a href="menu.html#generator">Coffee</a>
+                        <a href="menu.html#generator2">Choco & Tea</a>
+                        
+                    </div></div></li>
+                    <li class="mobile"><a href="contact.html">Contact</a></li>
+                    <li class="mobile"><a href="http://localhost/mysite/folder/">Client</a></li>
+                    <li class="logo"><a href="index.html">Logo</a></li>
+                    <li class="desktop"><a href="contact.html">Contact</a></li>
+                    <li class="desktop"><a href="http://localhost/mysite/folder/">Client</a></li>
+                    
+                </ul>
+                
+            </nav>
+            
+           
+        </header>
+        
+        <section class="features">
+            <figure>
+               
+               <img src="imagini/1.jpg" alt="espresso" >
+               <figcaption>Arome intense</figcaption> 
+                
+            </figure>
+            <figure>
+                
+                <img src="imagini/croissant.jpg" alt="croissant" >
+                <figcaption>Prospetime</figcaption>
+                
+            </figure>
+            <figure>
+                
+                <img src="imagini/goods.jpg" alt="goods" >
+               <figcaption>Produse speciale</figcaption>
+                
+            </figure>
+        </section>
+         <section class="lower">
+            <h1>DESPRE NOI</h1>
+            <p>Café Festival este o cocheta cafenea din centrul orasului Timisoara,<br> care ofera o varietate de experiente placute 
+                de domeniul cafelei de<br> specialitate, alaturi de alte cateva bunatati sanatoase, precum<br> biscuitii si batoanele,
+                 fructele proaspete si sucurile rare si ceaiuri,<br> care, in tandem cu atmosfera retro te motiveaza sa revii.</p>
+                 <a href="contact.html" class="myButton">Contact</a>
+               
+        </section>
+        <section class="features">
+            <figure>
+               
+               <img src="imagini/shop.jpg" alt="espresso" >
+               <figcaption>Profesionalism</figcaption> 
+                
+            </figure>
+            <figure>
+                
+                <img src="imagini/sticla.jpg" alt="croissant" >
+                <figcaption>Transparenta</figcaption>
+                
+            </figure>
+            <figure>
+                
+                <img src="imagini/socializare.jpg" alt="goods" >
+               <figcaption>Timp de calitate</figcaption>
+                
+            </figure>
+        </section>
+    <section class="ultima">
+        
+       <h1>LA NOI ESTI CA ACASA</h1>
+       <p>Ca o bula atemporala, in care timpul capata o noua dimensiune,
+            Cafe Festival pulseaza,<br> gandeste si respira povesti<br>
+            incantatoare, care aliniate pe etajere, sub forma<br> de bibelouri,
+        <br> carti si jocuri asteapta sa iti fie povestite.</p>
+       
+            <button id="myBtn"  class="myButton">Descopera</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal, continut -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Devino client fidel al cafenelei noastre!<br>Apasa pe casuta "Client" din partea de sus a paginii,<br>
+                            inregistreaza-te si vei primi prin email coduri de reducere <br> pentru a te putea bucura de produsele noaste.</p>
+                    </div>
+
+                </div>
+
+                <script>
+                
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                                }
+
+                    // click pe <span> (x), inchidere caseta modala
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                                }
+
+                        //apasarea oriunde in afara casetei determina inchiderea acesteia
+                            window.onclick = function(event) {
+                            if (event.target == modal) {
+                            modal.style.display = "none";
+                                }
+                                    }
+            </script>
+           
+          
+   </section>
+   
+        <footer>
+            <script>
+            var zile=["Duminica","Luni","Marti","Miercuri","Joi","Vineri"]
+            let time=new Date()
+            let date=[time.getDate(),time.getMonth()+1,time.getFullYear()].join("/")+" "+zile[time.getDay()]
+            document.write(date)
+            </script>
+            <div id="txt"></div>
+            <script>
+            function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              //adauga 0 in fata numerelor mai mici strict decat 10
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+              var t = setTimeout(function(){ startTime() }, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {
+                i = "0" + i;
+              }
+              return i;
+            }
+            </script>
+            <p>Cafe Festival-Since 1927</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="style_contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body onload="startTime()">
+        <header>
+            <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><div class="dropdown"><span><a href="#">Meniu</a></span>
+                        <div class="dropdown-content">
+                        <a href="menu.html#generator">Coffee</a>
+                        <a href="menu.html#generator2">Choco & Tea</a>
+                        
+                    </div></div></li>
+                    <li class="mobile"><a href="contact.html">Contact</a></li>
+                    <li class="mobile"><a href="http://localhost/mysite/folder/">Client</a></li>
+                    <li class="logo"><a href="index.html">Logo</a></li>
+                    <li class="desktop"><a href="contact.html">Contact</a></li>
+                    <li class="desktop"><a href="http://localhost/mysite/folder/">Client</a></li>
+                    
+                </ul>
+                
+            </nav>
+            
+           
+        </header>
+        <section class="features">
+           <table>
+               <tr>
+                   <td>Adresa<br>Piata Unirii nr.56, Timisoara</td>
+                   <td>
+                   Media<br>
+                   <a href="#" class="fa fa-facebook"></a>
+                   <a href="#" class="fa fa-twitter"></a>
+                   <a href="#" class="fa fa-instagram"></a>
+                </td>
+                   
+               </tr>
+
+               <tr>
+                <td>Telefon<br>0244418196<br>0244123654</td>
+                <td> PROGRAM<br>Luni - Vineri : 10:00 - 19:00<br>Sambata : 10:00 - 16:00<br>Duminica: inchis</td>
+            </tr>
+           </table>
+
+
+        </section>
+        <section class="lower">
+           <h1 style="color: black; padding-left: 42%;">Ai o idee? Ne poti ajuta!</h1>
+            
+           <a href="#" onmouseenter="enterimg('img')" onmouseleave="leaveimg('img')" target="_blank" style="padding-left:43.5%;" >
+                <img id="img"
+                    src="images/1.png" style="margin-top: 20px;">
+            </a>
+           
+           <script>
+           
+           function enterimg(id) {
+                document.getElementById(id).src = "images/2.png";
+            }
+    
+            function leaveimg(id) {
+                document.getElementById(id).src = "images/1.png";
+                }
+            
+            leaveimg('img2');
+            
+        </script>
+
+        <script>
+            function validateForm() {
+              var x = document.forms["myForm"]["fname"].value;
+              if (x == "") {
+                alert("Numele trebuie completat");
+                return false;
+              }
+            }
+            </script>
+            <form name="myForm"  onsubmit="return validateForm()" action="#">
+                <label for="fname" style="color: black;">Nume:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Numele...">
+            
+                <label for="mail" style="color: black;">Email:</label>
+                <input type="text" id="mail" name="mail" placeholder="Email...">
+            
+                <label for="com" style="color: black;">Comentarii, Sugestii sau Idei:</label>
+                
+                <textarea> </textarea>
+              
+                <input type="submit" value="Submit">
+              </form>
+            
+            </section>
+            <section class="interval">
+                <script>
+                    var image1 = document.getElementById("aaa");
+                    var img_array1=["images.contact/1.jpg","images.contact/2.jpg","images.contact/3.jpg","images.contact/4.jpg"];
+                    var index1=0;
+                    function slide1()
+                    {
+                    
+                        document["aaa"].src = img_array1[index1];
+                        index1++;
+                        if(index1>=img_array1.length)
+                        {
+                        index1=0;
+                        }
+                    }
+                    setInterval("slide1()",2000);
+
+                    var image2 = document.getElementById("bbb");
+                    var img_array2=["images.contact/4.jpg","images.contact/3.jpg","images.contact/2.jpg","images.contact/1.jpg"];
+                    var index2=0;
+                    function slide2()
+                    {
+                    
+                        document["bbb"].src = img_array2[index2];
+                        index2++;
+                        if(index2>=img_array2.length)
+                        {
+                        index2=0;
+                        }
+                    }
+                    setInterval("slide2()",2000);
+
+                    var image3 = document.getElementById("ccc");
+                    var img_array3=["images.contact/3.jpg","images.contact/1.jpg","images.contact/4.jpg","images.contact/2.jpg"];
+                    var index3=0;
+                    function slide3()
+                    {
+                    
+                        document["ccc"].src = img_array3[index3];
+                        index3++;
+                        if(index3>=img_array3.length)
+                        {
+                        index3=0;
+                        }
+                    }
+                    setInterval("slide3()",2000);
+
+                    var image4 = document.getElementById("ddd");
+                    var img_array4=["images.contact/2.jpg","images.contact/4.jpg","images.contact/1.jpg","images.contact/3.jpg"];
+                    var index4=0;
+                    function slide4()
+                    {
+                    
+                        document["ddd"].src = img_array4[index4];
+                        index4++;
+                        if(index4>=img_array4.length)
+                        {
+                        index4=0;
+                        }
+                    }
+                    setInterval("slide4()",2000);
+                    </script>
+                <table style=" width: 100%;">
+                    <td>
+                        <tr ><img id="aaa" src="images.contact/1.jpg" width="300" height="300" name="image" style="padding-left: 130px;"/></tr>
+                        <tr><img id="bbb" src="images.contact/2.jpg" width="300" height="300" name="image" style="padding-left: 20px;"/></tr>
+                        <tr><img id="ccc" src="images.contact/3.jpg" width="300" height="300" name="image"style="padding-left: 20px;" /></tr>
+                        <tr><img id="ddd" src="images.contact/4.jpg" width="300" height="300" name="image"style="padding-left: 20px;" /></tr>
+                    </td>
+                </table>
+                
+     
+             </section>
+            <footer><script>
+                var zile=["Duminica","Luni","Marti","Miercuri","Joi","Vineri"]
+                let time=new Date()
+                let date=[time.getDate(),time.getMonth()+1,time.getFullYear()].join("/")+" "+zile[time.getDay()]
+                document.write(date)
+                </script>
+                
+                <div id="txt"></div>
+    
+                <script>
+                function startTime() {
+                  var today = new Date();
+                  var h = today.getHours();
+                  var m = today.getMinutes();
+                  var s = today.getSeconds();
+                  // add a zero in front of numbers<10
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+                  var t = setTimeout(function(){ startTime() }, 500);
+                }
+                
+                function checkTime(i) {
+                  if (i < 10) {
+                    i = "0" + i;
+                  }
+                  return i;
+                }
+                </script>
+                <p>Cafe Festival-Since 1927</p>
+            </footer>
+    </body>
+</html>

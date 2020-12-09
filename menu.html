@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Meniu</title>
+        <link rel="stylesheet" href="style_menu.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body onload="startTime()">
+        <header>
+            <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><div class="dropdown"><span><a href="#">Meniu</a></span>
+                        <div class="dropdown-content">
+                        <a href="menu.html#generator">Coffee</a>
+                        <a href="menu.html#generator2">Choco & Tea</a>
+                        
+                    </div></div></li>
+                    <li class="mobile"><a href="contact.html">Contact</a></li>
+                    <li class="mobile"><a href="http://localhost/mysite/folder/">Client</a></li>
+                    <li class="logo"><a href="index.html">Logo</a></li>
+                    <li class="desktop"><a href="contact.html">Contact</a></li>
+                    <li class="desktop"><a href="http://localhost/mysite/folder/">Client</a></li>
+                    
+                </ul>
+                
+            </nav>
+            
+           
+        </header>
+        <section class="features" id="generator">
+            
+            <table>
+                
+                <tr>
+                    <td><img src="images/cappuccino.jpg" /></td>
+                    <td><img src="images/infuzor.jpg" /></td>
+                    <td><img src="images/flat.jpg" /></td>
+                </tr>
+                <tr>
+                    <td><img src="images/brown.jpg" /></td>
+                    <td><img src="imagini/1.jpg" /></td>
+                    <td><img src="images/c.jpg" /></td>
+                </tr>
+                
+                
+            </table>
+        </section>
+        <section class="lower">
+            <h1>Coffee-Meniu</h1>
+            <ul style="list-style-type:none;">
+                <li>Espresso .............................6 Ron</li>
+
+                    <li>2XEspresso ...........................9 Ron</li>
+                    
+                    <li>Cappuccino ..........................9 Ron</li>
+                    
+                    <li>Latte .....................................14 Ron</li>
+                    
+                    <li>Flat White ..........................13 Ron</li>
+                    
+                    <li>Americano ..........................9 Ron</li>
+              </ul>  
+              
+               
+        </section>
+        <section class="features" id="generator2">
+            
+            <table>
+                
+                <tr>
+                    <td><img src="imagini/a.jpg" /></td>
+                    <td><img src="imagini/orange.jpg" /></td>
+                    <td><img src="imagini/white.jpg" /></td>
+                </tr>
+                <tr>
+                    <td><img src="imagini/berry.png" /></td>
+                    <td><img src="images/g.jpg" /></td>
+                    <td><img src="images/chocolate.jpg" /></td>
+                </tr>
+                
+                
+            </table>
+        </section>
+        
+        <section class="lower2">
+            <h1>CHOCO & TEA<br>
+                11 Ron</h1>
+            <ul style="list-style-type:none;">
+                <li>Supreme Hot Chocolate</li>
+
+                    <li>Treasor White Chocolate</li>
+                    
+                    <li>Orange Chocolate</li>
+                    
+                    <li>Grey Tea</li>
+                    
+                    <li>Masala Tea</li>
+                    
+                    <li>Berry Tea</li>
+              </ul>  
+              
+               
+        </section>
+        
+   </section>
+   
+   <footer><script>
+    var zile=["Duminica","Luni","Marti","Miercuri","Joi","Vineri"]
+    let time=new Date()
+    let date=[time.getDate(),time.getMonth()+1,time.getFullYear()].join("/")+" "+zile[time.getDay()]
+    document.write(date)
+    </script>
+    
+    <div id="txt"></div>
+
+    <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      // add a zero in front of numbers<10
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+      var t = setTimeout(function(){ startTime() }, 500);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+    </script>
+    <p>Cafe Festival-Since 1927</p>
+</footer>
+    </body>
+</html>
